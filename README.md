@@ -81,7 +81,7 @@ def func4(a:int,b:int,c:bool):
     
     345     >>   24 LOAD_CONST               5 (333)
                  26 RETURN_VALUE
-    Bytecode(<function func2 at 0x1057b3e20>)
+    Bytecode(<function func2 at 0x107663eb0>)
 
 
 
@@ -94,7 +94,7 @@ print("Display dependency graph")
 g
 ```
 
-    Bytecode(<function func1 at 0x105534af0>)
+    Bytecode(<function func1 at 0x1073e45e0>)
     Test Cases
     [('a', '-4'), ('b', '-4')]
     Display dependency graph
@@ -119,9 +119,9 @@ print("Display dependency graph")
 g
 ```
 
-    Bytecode(<function func2 at 0x1057e80d0>)
+    Bytecode(<function func2 at 0x1073e4af0>)
     Test Cases
-    [('a', '2'), ('b', '0.72')]
+    [('a', '2'), ('b', '0.34')]
     [('a', '1'), ('b', '33/10')]
     [('a', '1'), ('b', '23/10')]
     Display dependency graph
@@ -146,7 +146,7 @@ print("Display dependency graph")
 g
 ```
 
-    Bytecode(<function func3 at 0x1057e8160>)
+    Bytecode(<function func3 at 0x107688160>)
     Test Cases
     [('a', '2'), ('b', '3')]
     [('a', '2'), ('b', '4')]
@@ -175,13 +175,13 @@ print("Display dependency graph")
 g
 ```
 
-    Bytecode(<function func4 at 0x1057e81f0>)
+    Bytecode(<function func4 at 0x1076881f0>)
     Test Cases
-    [('a', '3'), ('b', '4'), ('c', 'True')]
+    [('a', '3'), ('b', '4'), ('c', 'False')]
     [('a', '3'), ('b', '5'), ('c', 'False')]
     [('a', '2'), ('b', '5'), ('c', 'False')]
     [('a', '2'), ('b', '4'), ('c', 'False')]
-    [('a', '0'), ('b', '6'), ('c', 'False')]
+    [('a', '0'), ('b', '3'), ('c', 'False')]
     [('a', '4'), ('b', '4'), ('c', 'True')]
     [('a', '4'), ('b', '5'), ('c', 'True')]
     Display dependency graph
