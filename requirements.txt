@@ -1,0 +1,6 @@
+z3-solver>=4.8.13.0
+jupyter>=1.0.0
+jupyter-client>=6.1.7
+jupyter_contrib_nbextensions>=0.5.1
+jupyterlab-lsp
+jupyterlab_markup
