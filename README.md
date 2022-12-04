@@ -7,7 +7,7 @@
 - Activate the virtual environment: source env/bin/activate
 - ```brew install graphviz```
 - ```pip install --global-option=build_ext --global-option="-I$(brew --prefix graphviz)/include/" --global-option="-L$(brew --prefix graphviz)/lib/" pygraphviz```
-- Install all packages in requirements.txt file: python3.10 -m pip install -r requirements.txt
+- Install all packages in requirements.txt file: ```python3.10 -m pip install -r requirements.txt```
 - To convert a jupyter notebook to README : ```jupyter nbconvert --execute --to markdown README.ipynb```
 - To convert a jupyter notebook to python file: ```jupyter nbconvert --to script testCaseGeneration.ipynb```
 
@@ -19,7 +19,7 @@
 - Incase a variable can take any value
     - Floats will default to a random value between 0 to 2 in the example test case
     - Ints will default to random value between 1 to 9 in the example test case
-- The arguments of the function type must be defined
+- The type of the arguments of the function must be defined, example ```func1(a:int,b:int)```
 
 ## Examples
 
