@@ -6,7 +6,7 @@
 # 2. Collect all the conditions in every path
 # 3. Solve it using Z3
 
-# In[111]:
+# In[112]:
 
 
 import dis
@@ -326,59 +326,6 @@ def generateTestCases(fn):
 
 
     return gra,byteCode,models,results
-
-
-# In[109]:
-
-
-def func1(a:int,b:int):
-    a = a * 1
-    b = b + 4
-    a = a + 4
-    c = a * a
-    return a
-
-def func2(a:int,b:float):
-    if a == 1 and b==2.3:
-        b = 2
-        return 233
-    return 333
-
-def func3(a:int,b:int):
-    if a == 1 and b==2:
-        b = 2
-        return 233
-    elif b==3:
-        b = 4
-        return
-    else:
-        a = 1
-    return 333
-
-def func4(a:int,b:int,c:bool):
-    if a==3 or c:
-        if b==4:
-            return
-        else:
-            return
-    elif a==2 and b==4:
-        return
-    else:
-        return
-
-
-# In[110]:
-
-
-dis.dis(func2)
-(g,_,models,r) = generateTestCases(func2)
-r
-
-
-# In[105]:
-
-
-g
 
 
 # In[ ]:
