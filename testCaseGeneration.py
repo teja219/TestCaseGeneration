@@ -246,7 +246,6 @@ def generateTestCases(fn):
     nodes = []
     prevInstructionIsJump = False
     byteCode = dis.Bytecode(fn)
-    print(byteCode)
     for instr in byteCode:
         # Adding edges
         if prevInstructionIsJump:
