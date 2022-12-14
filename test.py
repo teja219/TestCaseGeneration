@@ -37,6 +37,12 @@ def func4(a:int,b:int,c:bool):
     else:
         return
 
+def func5(a:int, b:int):
+    if a != b:
+        return 233
+    else:
+        return 333
+
 def analyse(func):
     (g,bc,models,results) = TG.generateTestCases(func)
 
@@ -63,3 +69,4 @@ analyse(func1)
 analyse(func2)
 analyse(func3)
 analyse(func4)
+analyse(func5)

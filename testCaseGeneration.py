@@ -110,6 +110,9 @@ def handleBinaryInstruction(operationName: str,
         case "<=":
             res = createOperationResult(z3.BoolRef,False,variableName,mapVariableToLatestVersionId)
             solver_.add(res == (operand1 <= operand2))
+        case "!=":
+            res = createOperationResult(z3.BoolRef,False,variableName,mapVariableToLatestVersionId)
+            solver_.add(res == (operand1 != operand2))
         case _:
             raise Exception("Operation " + str(operationName) + " is not handled")
         # Need to add DIVISION, COMPARE operations
